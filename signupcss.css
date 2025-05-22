@@ -1,0 +1,95 @@
+/* signupcss.css */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #ffe6f0; /* light pink background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+form {
+  background-color: #fff0f5; /* light pink-ish form background */
+  padding: 30px 40px;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 450px;
+}
+
+form h1 {
+  text-align: center;
+  margin-bottom: 24px;
+  color: #cc3366; /* darker pink for headings */
+}
+
+form div {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 6px;
+  color: #cc3366;
+  font-weight: 600;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="password"],
+input[type="date"],
+select {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #ffcce0;
+  border-radius: 8px;
+  font-size: 14px;
+  background-color: #fff;
+  transition: border-color 0.3s ease;
+}
+
+input:focus,
+select:focus {
+  outline: none;
+  border-color: #ff66a3;
+}
+
+button[type="submit"] {
+  width: 100%;
+  padding: 12px;
+  margin-top: 10px;
+  background-color: #ff66a3; /* pink button */
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #e05590;
+}
+
+h3 {
+  margin-top: 20px;
+  text-align: center;
+  color: #993355;
+}
+
+/* Second button (Login) with a slight variation in color */
+form button:last-of-type {
+  margin-top: 8px;
+  background-color: #ff99bb;
+}
+
+form button:last-of-type:hover {
+  background-color: #e678a0;
+}
